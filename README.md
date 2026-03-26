@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invoice Flow Automation Tool 🚀
 
-## Getting Started
+**Streamlined Invoicing for Modern Freelancers and Creative Professionals.**
 
-First, run the development server:
+Invoice Flow is a comprehensive automation utility designed for freelancers, developers, and creative studios. It transforms the tedious task of invoicing into a seamless, automated workflow—allowing you to focus on what you do best.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Why Invoice Flow?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For many freelancers, manual invoicing is a time-sink. Invoice Flow solves this by integrating directly with the tools you already use, ensuring consistency, speed, and professionalism.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **⏱️ Save Hours**: Automate invoice generation from your tracked work.
+- **📈 Stay Organized**: Automatic synchronization with Google Sheets for effortless bookkeeping.
+- **💸 Get Paid Faster**: Integrated dynamic UPI payment links for instant Indian bank transfers.
+- **📄 Professional Output**: Generate high-quality PDF invoices that reflect your brand.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Key Features
 
-## Learn More
+- **Google Sheets Integration**: Seamlessly sync client data and invoice records with your workspace.
+- **Dynamic UPI Payment Links**: Automatically generate QR codes and payment links for every invoice.
+- **Next-Gen Tech Stack**: Built with Next.js 14 and Framer Motion for a premium, high-performance experience.
+- **Client Management**: A centralized hub to manage all your professional relationships.
+- **PDF Generation**: Native support for creating and downloading professional invoices on the fly.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Technical Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Backend/ORM**: [Prisma](https://www.prisma.io/) with SQLite
+- **Authentication**: [NextAuth.js](https://next-auth.js.org/)
+- **APIs**: [Google Sheets API](https://developers.google.com/sheets/api)
+- **PDF**: [jspdf](https://github.com/parallax/jsPDF), [html2canvas](https://html2canvas.hertzen.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏁 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (Latest LTS recommended)
+- A Google Cloud Project for Sheets integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/vickyiitp/Invoice-Flow-Automation-tool.git
+    cd Invoice-Flow-Automation-tool
+    ```
+
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Setup**:
+    Create a `.env` file based on the provided environment variables:
+    ```env
+    DATABASE_URL="file:./dev.db"
+    NEXTAUTH_SECRET="..."
+    GOOGLE_CLIENT_ID="..."
+    GOOGLE_CLIENT_SECRET="..."
+    ```
+
+4.  **Database Migration**:
+    ```bash
+    npx prisma db push
+    ```
+
+5.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+
+## 📜 License
+
+This project is licensed under the MIT License.
